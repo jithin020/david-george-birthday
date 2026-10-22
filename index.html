@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>David George · First Birthday</title>
+  <meta name="description" content="You're invited to celebrate David George's First Birthday on 25th October 2026 at Hotel Grand Courtyard, Pala.">
+  <meta property="og:title" content="David George · First Birthday 🎂">
+  <meta property="og:description" content="Join us for a day of joy, love & laughter as we celebrate David George's First Birthday!">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Great+Vibes&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Preloader -->
+  <div class="preloader" id="preloader">
+    <div class="preloader-content">
+      <div class="preloader-star">✦</div>
+      <strong>DAVID GEORGE</strong>
+      <em>First Birthday</em>
+    </div>
+  </div>
+
+  <!-- Particle Canvas -->
+  <canvas id="particles"></canvas>
+
+  <!-- Music Toggle -->
+  <button class="music-btn" id="musicBtn" title="Toggle background music" aria-label="Toggle music">
+    <span id="musicIcon">♪</span>
+  </button>
+
+  <!-- Navigation -->
+  <nav id="navbar">
+    <a class="nav-logo" href="#">DG</a>
+    <div class="nav-links">
+      <a href="#event">Event</a>
+      <a href="#verse">Blessing</a>
+      <a href="#family">Family</a>
+      <button class="nav-rsvp-btn" id="navRsvp">RSVP</button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero">
+    <div class="hero-inner">
+      <p class="kicker">A day of joy · love · laughter</p>
+
+      <div class="badge-one" aria-label="First Birthday">
+        <span>1</span><small>st</small>
+      </div>
+
+      <h1 class="hero-name">David<br><em>George</em></h1>
+      <p class="hero-subtitle">First Birthday Celebration</p>
+
+      <p class="lead">
+        With joyful hearts, we invite you to celebrate the first birthday of our beloved son.
+      </p>
+
+      <div class="date-pill">
+        <span class="date-day">25</span>
+        <div class="date-detail">
+          <span>OCTOBER 2026</span>
+          <small>SUNDAY · 12:00 PM</small>
+        </div>
+      </div>
+
+      <a class="btn" href="#event">Enter the celebration ↓</a>
+    </div>
+
+    <!-- Decorative balloons -->
+    <div class="balloon balloon-l" aria-hidden="true">🎈</div>
+    <div class="balloon balloon-r" aria-hidden="true">🎈</div>
+    <!-- Decorative watercolor image -->
+    <img src="hero_decor.png" alt="" class="hero-decor-img" aria-hidden="true">
+  </header>
+
+  <!-- Event Details Section -->
+  <section id="event" class="section reveal">
+    <p class="kicker">The Celebration</p>
+    <h2>Join Us for a Day of Joy</h2>
+    <div class="cards">
+
+      <article class="card">
+        <small class="card-num">01</small>
+        <div class="card-icon">🎂</div>
+        <h3>Birthday Celebration</h3>
+        <p><b>Sunday, 25 October 2026</b><br>12:00 PM onwards</p>
+        <p>
+          <b>Hotel Grand Courtyard</b><br>
+          <span class="location">Pala, Kerala</span>
+        </p>
+        <a id="directionsLink" target="_blank" rel="noopener"
+          href="https://www.google.com/maps/place/Hotel+Grand+Courtyard+Pala/@9.7096471,76.6745798,1111m/data=!3m2!1e3!4b1!4m9!3m8!1s0x3b07cdec5b59691f:0xa856dd698e988b4c!5m2!4m1!1i2!8m2!3d9.7096471!4d76.6771547!16s%2Fg%2F11yfyt2_w7">
+          Directions →
+        </a>
+      </article>
+
+      <article class="card">
+        <small class="card-num">02</small>
+        <div class="card-icon">✨</div>
+        <h3>What to Expect</h3>
+        <p><b>Lunch &amp; Cake Cutting</b><br>Followed by celebrations</p>
+        <p>
+          <b>Dress Code</b><br>
+          <span class="location">Smart Casual / Festive</span>
+        </p>
+        <a href="#" id="openRsvp2">RSVP Now →</a>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- Scripture Verse Section -->
+  <section id="verse" class="scripture reveal">
+    <div class="quote-mark">"</div>
+    <blockquote>
+      Before I formed you in the womb I knew you,<br>
+      before you were born I dedicated you.
+    </blockquote>
+    <cite>— Jeremiah 1:5</cite>
+  </section>
+
+  <!-- Countdown Timer Section -->
+  <section class="count reveal">
+    <p class="kicker">Counting down to the special day</p>
+    <div class="clock">
+      <div class="clock-unit"><b id="d">—</b><span>DAYS</span></div>
+      <div class="clock-sep" aria-hidden="true">:</div>
+      <div class="clock-unit"><b id="h">—</b><span>HOURS</span></div>
+      <div class="clock-sep" aria-hidden="true">:</div>
+      <div class="clock-unit"><b id="m">—</b><span>MINUTES</span></div>
+      <div class="clock-sep" aria-hidden="true">:</div>
+      <div class="clock-unit"><b id="s">—</b><span>SECONDS</span></div>
+    </div>
+  </section>
+
+  <!-- Family Section -->
+  <section id="family" class="family reveal">
+    <p class="kicker">With love</p>
+    <p class="family-intro">
+      Surrounded by the warmth of those<br class="desktop">
+      who cherish him.
+    </p>
+    <div class="family-grid">
+      <!-- Row 1: Parents -->
+      <div class="family-row-top">
+        <div class="family-card">
+          <span class="family-label">PROUD PARENTS</span>
+          <h2>Jithin Jose</h2>
+          <div class="amp">&amp;</div>
+          <h2>Dona Maria Saju</h2>
+        </div>
+      </div>
+      <!-- Row 2: Grandparents -->
+      <div class="family-row-bottom">
+        <div class="family-card">
+          <span class="family-label">PATERNAL GRANDPARENTS</span>
+          <h2>A J Joseph</h2>
+          <div class="amp">&amp;</div>
+          <h2>Rosely V. V.</h2>
+        </div>
+        <div class="family-card">
+          <span class="family-label">MATERNAL GRANDPARENTS</span>
+          <h2>Saju Joseph</h2>
+          <div class="amp">&amp;</div>
+          <h2>Ancy Saju</h2>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Closing CTA Section -->
+  <section class="closing reveal">
+    <div class="closing-star" aria-hidden="true">✦</div>
+    <p class="gift-line">Your presence is the greatest gift.</p>
+    <p>We look forward to sharing this blessed day with you.</p>
+    <div class="closing-actions">
+      <button class="btn" id="openRsvp">RSVP</button>
+      <button class="btn btn-outline" id="addCalendar">ADD TO CALENDAR</button>
+    </div>
+  </section>
+
+  <!-- RSVP Modal -->
+  <div class="rsvp-modal" id="rsvpModal" aria-hidden="true" role="dialog" aria-modal="true" aria-label="RSVP Form">
+    <div class="rsvp-backdrop" id="rsvpBackdrop"></div>
+    <div class="rsvp-box">
+      <button class="rsvp-close" id="closeRsvp" aria-label="Close">×</button>
+      <p class="kicker">Kindly respond</p>
+      <h2>Will you join us?</h2>
+      <p class="modal-copy">Please let us know if you'll be joining David George's big day!</p>
+      <form id="rsvpForm" novalidate>
+        <input id="guestName" type="text" required placeholder="Your name" autocomplete="name">
+        <select id="guestResponse" required>
+          <option value="" disabled selected>Your response</option>
+          <option value="attending">Joyfully attending 🎉</option>
+          <option value="unable">Unable to attend</option>
+          <option value="maybe">Not sure yet</option>
+        </select>
+        <select id="guestCount">
+          <option value="1">1 guest</option>
+          <option value="2">2 guests</option>
+          <option value="3">3 guests</option>
+          <option value="4">4 guests</option>
+          <option value="5">5+ guests</option>
+        </select>
+        <textarea id="guestMessage" rows="3" placeholder="A note for Jithin &amp; Dona (optional)"></textarea>
+        <button class="btn modal-btn" type="submit">SEND RSVP VIA WHATSAPP 💬</button>
+      </form>
+      <small>WhatsApp: <b>+91 88480 20524</b></small>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>DAVID GEORGE · 25 OCTOBER 2026</p>
+    <p class="footer-sub">First Birthday 🎂 · Hotel Grand Courtyard, Pala</p>
+    <p class="footer-verse">Jeremiah 1:5</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
